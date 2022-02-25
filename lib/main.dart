@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const FlexScheme usedScheme = FlexScheme.bahamaBlue;
+    const FlexScheme usedScheme = FlexScheme.deepBlue;
 
     return Sizer(builder: (context, orientation, deviceType) {
       return ThemeBuilder(
