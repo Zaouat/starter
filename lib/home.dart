@@ -1,6 +1,5 @@
 import 'dart:developer';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_scale_tap/flutter_scale_tap.dart';
 import 'package:flutter_svg/svg.dart';
@@ -18,13 +17,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  bool rememberMe = false;
-  void onRememberMeChanged(bool newValue) => setState(() {
-        rememberMe = newValue;
+  bool _switchValue=true;
 
-        if (rememberMe) {
-        } else {}
-      });
 
   @override
   Widget build(BuildContext context) {
@@ -97,14 +91,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 1.h),
-              Checkbox(
-                value: rememberMe,
-                //checkColor: ,
-                //fillColor: FlexColor.materialLightPrimary,
-                onChanged: (bool? val) => onRememberMeChanged(val!),
+              SizedBox(height: 2.h),
+              Switch.adaptive(
+                value: _switchValue,
+                onChanged: (value) {
+                  setState(() {
+                    _switchValue = value;
+                  });
+                },
               ),
-
               SizedBox(height: 10.h),
 
               //-----------DropDown Widget
@@ -139,16 +134,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
+
               SizedBox(height: 5.h),
               //-----------Language Widget
               buildSwitchListTileMenuItem(
                   context: context,
-                  title: "arabic".tr(),
-                  locale: const Locale("ar", "DZ")),
-              buildSwitchListTileMenuItem(
-                  context: context,
                   title: "english".tr(),
                   locale: const Locale("en", "US")),
+              buildSwitchListTileMenuItem(
+                  context: context,
+                  title: "arabic".tr(),
+                  locale: const Locale("ar", "DZ")),
+
             ],
           ),
         ));
