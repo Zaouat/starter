@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         ),
         lightTheme: FlexThemeData.light(
           scheme: usedScheme,
-            appBarElevation: 12,
+          appBarElevation: 12,
         ),
         builder: (context, regularTheme, darkTheme, themeMode) => MaterialApp(
           title: Cst.appName,

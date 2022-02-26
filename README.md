@@ -1,16 +1,36 @@
-# starter
+# Starter App
 
-A new Flutter project.
+This is a starter project that already has dark Mode and language support with provider implemented.
 
-## Getting Started
+## Packages
 
-This project is a starting point for a Flutter application.
+### Themes
 
-A few resources to get you started if this is your first Flutter project:
+- flex_color_scheme
+- stacked_themes
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Font & Icons
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- google_fonts
+- flutter_svg
+
+### Tools
+
+- sizer
+- flutter_scale_tap
+
+### Language
+
+- easy_localization
+
+### Providers
+
+- provider
+- get
+
+## Dev dependencies
+
+- flutter_launcher_icons
+- flutter_native_splash
+- change_app_package_name
+- flutter_automation
