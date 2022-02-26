@@ -1,5 +1,7 @@
 # Starter App
 
+![src](https://media.giphy.com/media/1LV7eYzryNBYn8V0l8/giphy.gif "starter")
+
 This is a starter project that already has dark Mode and language support with provider implemented.
 
 ## Packages
